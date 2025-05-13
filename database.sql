@@ -37,5 +37,23 @@ INSERT INTO Customers (first_name, last_name, email, phone) VALUES
                          ('John', 'Doe', 'john.doe@email.com', '345-678-9012'),
                          ('Emily', 'Johnson', 'emily.johnson@email.com', '456-789-0123'),
                          ('Michael', 'Williams', 'michael.williams@email.com', '567-890-1234');
+INSERT INTO Orders (customer_id, order_date, total_amount) VALUES
+                         (1, '2025-05-12', 45.99),
+                         (2, '2025-05-11', 30.50),
+                         (3, '2025-05-10', 60.00),
+                         (4, '2025-05-09', 22.75),
+                         (5, '2025-05-08', 75.20);
+--updated books
+UPDATE Books
+SET price = price + 5
+WHERE title = 'The Silent Patient';
+
+UPDATE Books
+SET stock_quantity = 25
+WHERE title = 'Atomic Habits';
+
+--delete from customers
+DELETE FROM Customers
+WHERE email = 'john.doe@example.com';
 
 
