@@ -56,4 +56,15 @@ WHERE title = 'Atomic Habits';
 DELETE FROM Customers
 WHERE email = 'john.doe@example.com';
 
+--Selecting
+SELECT * FROM Books
+WHERE genre = 'Fiction';
+
+SELECT * FROM Orders
+WHERE total_amount > 50;
+
+SELECT * FROM Customers
+WHERE last_name LIKE '%son%';
+
+
 
